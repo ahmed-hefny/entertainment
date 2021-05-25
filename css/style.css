@@ -1,0 +1,298 @@
+@font-face {
+    font-family: 'snake';
+    src: url('Snake\ Chan.ttf');
+}
+body {
+    font-family: Arial;
+    margin: 0px;
+    padding: 0px;
+}
+/* header style */
+.tab {
+    overflow: hidden;
+    background-color: #022534;
+    list-style: none;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    padding: 15 0px;
+}
+.tab li{
+    text-align: center;
+}
+
+.tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.tab button:hover {
+    background-color: #08546C;
+}
+
+
+.tab button.active {
+    background-color: #08546C;
+}
+/* Home section style */
+.tabcontent {
+    display: none;
+    border-top: none;
+}
+#Home{
+    background: url(../background.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+
+}
+
+#Home h3{
+    padding: 15px;
+    margin: 0px;
+    color: #022534;
+    text-align: center;
+    font-family: 'Ranchers', cursive;
+    letter-spacing: 5px;
+    font-size: 2rem;
+}
+#Home .games{
+    padding: 6px 0px;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#Home .games article{
+    padding: 20px;
+    transition: 1s;
+    border-radius: 12px;
+    background: white;
+}
+#Home .games img{
+    border-radius: 15px;
+    filter: grayscale(100%);
+    transition: 1s;
+}
+#Home .games p{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Ranchers', cursive;
+    
+}
+#Home .games article:hover{
+    box-shadow: 1px 1px 15px darkgray;
+    color: red;
+}
+#Home .games .left-side:hover{
+    cursor: url(https://cdn.custom-cursor.com/db/pointer/32/gucci_kingsnake_pointer.png) , pointer!important;
+}
+#Home .games .right-side:hover{
+    cursor: url(https://cdn.custom-cursor.com/db/cursor/32/Cap_America_Cursor.png) , default!important
+}
+#Home .games article:hover img{
+    filter: none;
+
+}
+.home-footer{
+    padding: 30px 30px;
+    margin-top: 15px ;
+    background-color: #08546C;
+    color: white;
+
+}
+
+#Home .copy-rights{
+    background-color: #022534;
+    padding: 10px 0px;
+    color: white;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+/* Snake Game Style */
+.snake{
+    padding: 30px;
+    background: url('../snake-background.jpg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    text-align: center;
+    font-family: helvetica;
+    overflow: hidden;
+    border: none;
+    cursor: url(https://cdn.custom-cursor.com/db/pointer/32/gucci_kingsnake_pointer.png) , pointer!important;
+}
+
+.snake h3{
+    margin: 0px;
+    padding: 15px;
+    color: yellow;
+    font-size: 1.5rem;
+    font-family: snake;
+    letter-spacing: 10px;
+}
+.snake canvas{
+    background: white;
+    border: 1px solid yellow;
+    box-shadow: 1px 1px 15px 2px yellow;
+    border-radius: 10px;
+}
+#stage {
+    margin:20px auto ;
+    border: 3px solid rgb(151, 149, 149);
+}
+
+#restart {
+    display: none;
+}
+.snake .controls{
+    width: 45%;
+    margin-left: 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.snake .controls p{
+    font-size: 1.5rem;
+    color: yellow;
+    letter-spacing: 3px;
+    font-weight: 800;
+    text-shadow: 1px 1px 25px black;
+}
+.snake .controls p span{
+    font-weight: 800;
+    color: white;
+    font-family: 'Ranchers', cursive;
+    letter-spacing: 3px;
+    font-size: 1.7rem;
+    animation-name: fire;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes fire {
+    0% {color: red;}
+    25% {color: yellow;}
+    50%  {color:blue;}
+    75%  {color:green;}
+    100%  {color:white;}
+  }
+.snake h4{
+    text-align: left;
+    font-size: 2rem;
+    margin: 16px 0px;
+    color: red;
+    text-shadow: 1px 1px 25px white;
+}
+.snake button{
+    padding: 10px 50px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-radius: 12px;
+    border: none;
+    background: green;
+    color: white;
+    font-family: 'snake';
+    cursor: pointer;
+    transition: 0.5s;
+}
+.snake button:hover{
+    background: yellow;
+    color: blue;
+}
+.snake select{
+    padding: 8px 30px;
+    font-size: 1.3rem;
+    font-weight: 800;
+    border-radius: 12px;
+    margin-left: 15px;
+}
+.snake .guide{
+    color: maroon;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-weight: 800;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Organ Style */
+.organ{
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.organ .stage{
+    background: white;
+    text-align: center;
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px white;
+    border-radius: 12px;
+    padding: 10px;
+    transition: 0.5s;
+}
+.organ .stage img{
+    height: 364px;
+}
+.organ .stage:hover{
+    transform: translateY(-10px);
+}
+.bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  .content {
+    background-color:rgba(255,255,255,.8);
+    border-radius:.25em;
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+    box-sizing:border-box;
+    left:50%;
+    padding:10vmin;
+    position:fixed;
+    text-align:center;
+    top:50%;
+    transform:translate(-50%, -50%);
+  }
+  h1 {
+    font-family:monospace;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
