@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    background:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/56901/bg-clouds2-tinypng.png") repeat-x 0 bottom #ACE6FF;
+    height: 100vh;
+    margin: 0px;
+    padding: 15px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+h1
+{
+    width: 50%;
+    margin: 15px auto;
+    text-align: center;
+    font-family: cursive;
+    font-size: 2.5rem;
+    font-weight: 1000;
+    color: white;
+    border-radius: 30px;
+    background: #790707;
+    cursor: pointer;
+    padding: 0px 20px;
+}
+p{
+    font-size: 1.5rem;
+    color: #03225a;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: tahoma;
+    text-align: center;
+}
+[class*="col-"] {
+    padding: 15px;
+}
+
+.col-1 {
+    flex: 33.33%;
+
+}
+.col-2 {
+    flex: 66.66%;
+
+}
+.col-3 {
+    flex: 100%;
+}
+.sign{
+    font-size: 2.5rem;
+    cursor: pointer;
+    text-align: center;
+
+}
+.sign a{
+    color: green;
+}
+
+[class*="st"]{
+    transition: 0.2s;
+}
+[class*="st"]:hover{
+    fill: white;
+}
