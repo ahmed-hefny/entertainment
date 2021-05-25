@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <title>Entertainment</title>
 </head>
 
 <body>
@@ -19,14 +20,11 @@
         <h3 id="homeTitle"></h3>
         <hr>
         <section class="games">
-            <article class="left-side" title="play Snake game that we never got bored of and fit to all ages.."
-                onclick="changeTab(event, 'Snake')">
+            <article class="left-side" title="play Snake game that we never got bored of and fit to all ages.." onclick="changeTab(event, 'Snake')">
                 <img src="snake.jpeg" alt="snake game">
                 <p class="gameTitle">Snake</p>
             </article>
-            <article class="right-side"
-                title="Increase your knowledge about the human body organs with this simple game..."
-                onclick="changeTab(event, 'organ');loadScript()">
+            <article class="right-side" title="Increase your knowledge about the human body organs with this simple game..." onclick="changeTab(event, 'organ');loadScript()">
                 <img src="body.PNG" alt="">
                 <p>Organs</p>
 
@@ -35,35 +33,31 @@
         <section class="home-footer">
             <h2>About:</h2>
             <p>Website is designed to provide a games for kids.</p>
-            <p>Snake Game: simple game contains 5 levels with the keyboard movement keys to control the snake to
-                avoid of hitting the wall and eat the apples to increase the score.</p>
+            <p>Snake Game: simple game contains 5 levels with the keyboard movement keys to control the snake to avoid of hitting the wall and eat the apples to increase the score.</p>
             <p>Organs: information Game contains 3 stages to increase the kids knowledge about the organs of the human body by clicking on each.</p>
         </section>
-        <section class="copy-rights">This website is designed & developed by .. Eng/ Mohamed Farghal - Eng/ Romany
-            Mounir -
-            Eng/Ahmed Hefny
+        <section class="copy-rights">This website is designed & developed by .. Eng/ Mohamed Farghal - Eng/ Romany Mounir - Eng/Ahmed Hefny
         </section>
     </section>
 
     <section id="Snake" class="tabcontent snake">
-            <h3>Let's play Snake game</h3>
-            <button id="getStart" onclick="getStart()">Start</button>
-            <button id="restart" onclick="location.reload()">Restart</button>
-            <select id="levels">
+        <h3>Let's play Snake game</h3>
+        <button id="getStart" onclick="getStart()">Start</button>
+        <button id="restart" onclick="location.reload()">Restart</button>
+        <select id="levels">
                 <option value="1">Level 1</option>
                 <option value="2">Level 2</option>
                 <option value="3">Level 3</option>
                 <option value="4">Level 4</option>
                 <option value="5">Level 5</option>
             </select> <br>
-            <canvas id="stage" height="500" width="600"></canvas>
+        <canvas id="stage" height="500" width="600"></canvas>
         <hr>
         <div class="controls">
             <h4>Controls:</h4>
             <p>Highest score: <span id="highestScore">0</span></p>
         </div>
-        <p class="guide">Use keyboard buttons (UP / RIGHT / DOWN / LEFT) to control the snake, try to eat apples as much as you can to
-            get the highest score, if you hit the wall, you will loss and the game restart again automatically...</p>
+        <p class="guide">Use keyboard buttons (UP / RIGHT / DOWN / LEFT) to control the snake, try to eat apples as much as you can to get the highest score, if you hit the wall, you will loss and the game restart again automatically...</p>
     </section>
 
     <section id="organ" class="tabcontent">
